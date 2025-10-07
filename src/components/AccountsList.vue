@@ -21,12 +21,14 @@
 </template>
   
 <script setup lang="ts">
+    import { storeToRefs } from 'pinia'
     import { useAccountsStore } from '../store/accountStore'
     import AccountRow from './AccountRow.vue'
     import Button from 'primevue/button'
     
     const store = useAccountsStore()
-    const accounts = store.accounts
+    const { accounts } = storeToRefs(store)
+
     
     const addAccount = () => {
         store.addEmptyAccount()
