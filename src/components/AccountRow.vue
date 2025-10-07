@@ -6,6 +6,7 @@
           @blur="onLabelsBlur"
           :class="{'invalid': errors.labels}"
           placeholder="tag1;tag2"
+          maxlength="50"
         />
       </div>
   
@@ -35,6 +36,7 @@
           :feedback="false"
           @blur="onPasswordBlur"
           :class="{'invalid': errors.password}"
+          maxlength="100"
         />
       </div>
   
@@ -152,17 +154,12 @@
         margin-bottom: 6px; 
     }
     .invalid { 
-    border: 1px solid #d9534f; 
+        border: 1px solid #d9534f;
+        border-radius: 8px;
     }
     .hint { 
         font-size: 11px; 
         color: #666; 
-    }
-    @media (max-width: 900px) {
-        .account-row { 
-            grid-template-columns: 1fr; 
-            gap: 8px; 
-        }
     }
 </style>
   
