@@ -4,7 +4,9 @@
             <h2>Учетные записи</h2>
             <Button icon="pi pi-plus" label="Добавить" @click="addAccount" />
         </div>
-    
+        <div class="">
+            <p class="hint">Для указания нескольких меток для одной пары логин/пароль используйте разделитель ;</p>
+        </div>
         <div class="list-headers">
             <div>Метка</div>
             <div>Тип</div>
@@ -60,6 +62,13 @@
     .empty { 
         color:#666; 
         padding:12px 0; 
+    }
+    .hint { 
+        font-size: 15px; 
+        color: #666;
+        margin: 15px 0;
+        background-color: rgb(235, 235, 235);
+        padding: 10px 5px;
     }
 </style>
   

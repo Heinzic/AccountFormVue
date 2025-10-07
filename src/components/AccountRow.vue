@@ -147,19 +147,9 @@
         padding: 10px 0;
         border-bottom: 1px solid #eee;
     }
-    .row-field label { 
-        display:block; 
-        font-size: 12px; 
-        color: #333; 
-        margin-bottom: 6px; 
-    }
     .invalid { 
         border: 1px solid #d9534f;
         border-radius: 8px;
-    }
-    .hint { 
-        font-size: 11px; 
-        color: #666; 
     }
 </style>
   
