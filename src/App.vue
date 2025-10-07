@@ -3,10 +3,15 @@ import Button from "primevue/button"
 </script>
 
 <template>
-  <div>Hello</div>
-  <Button>gfgf</Button>
+  <div class="flex">
+    <h1>Учетные записи</h1>
+    <Button>+</Button>
+  </div>
 </template>
 
 <style scoped>
-
+  .flex {
+    display: flex;
+    gap: 15px;
+  }
 </style>
