@@ -5,6 +5,7 @@ import ToastService from 'primevue/toastservice';
 import Aura from '@primeuix/themes/aura';
 import App from './App.vue'
 import './style.css'
+import 'primeicons/primeicons.css'
 
 const pinia = createPinia()
 const app = createApp(App)
@@ -18,6 +19,7 @@ app.use(PrimeVue, {
         }
     }
 })
+
 app.use(ToastService)
 
 app.mount('#app')
