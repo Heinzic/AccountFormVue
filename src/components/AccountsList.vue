@@ -53,7 +53,7 @@
     }
     .list-headers { 
         display:grid; 
-        grid-template-columns: 2fr 1fr 2fr 2fr 60px; 
+        grid-template-columns: 3fr 2fr 3.6fr 1.4fr 180px;
         gap:12px; 
         font-weight:600; 
         color:#444; 

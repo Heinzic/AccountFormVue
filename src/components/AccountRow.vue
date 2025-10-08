@@ -140,12 +140,22 @@
   
 <style scoped>
     .account-row {
-        display: grid;
-        grid-template-columns: 2fr 1fr 2fr 2fr 60px;
+        display: flex;
         gap: 12px;
         align-items: end;
         padding: 10px 0;
         border-bottom: 1px solid #eee;
+    }
+    .type-field div {
+      width: 150px;
+    }
+    .login-field {
+      display: flex;
+      flex-grow: 1;
+    }
+    .login-field input {
+      flex-grow: 1;
+      width: 100%;
     }
     .invalid { 
         border: 1px solid #d9534f;
